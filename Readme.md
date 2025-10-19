@@ -8,7 +8,7 @@ It lets users **add, edit, mark complete, and delete tasks**, with all data stor
 ## 🚀 Live Demo
 > *(Optional: Add a live link here if you deploy it on GitHub Pages or Netlify)*  
 Example:  
-👉 [Live Demo]([https://yourusername.github.io/todo-list/](https://sarthaksk26.github.io/TodoFromBasics/))
+👉 [Live Demo](https://yourusername.github.io/todo-list/](https://sarthaksk26.github.io/TodoFromBasics/))
 
 ---
 
