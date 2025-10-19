@@ -1,0 +1,172 @@
+
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --danger: #ef4444;
+  --radius: 10px;
+  --shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--bg), #111827);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.5s ease;
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+/* Input & Button Row */
+#taskInput {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 1rem;
+  background: #0f172a;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  transition: box-shadow 0.2s;
+}
+
+#taskInput:focus {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+#addBtn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s, transform 0.15s;
+}
+
+#addBtn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Task Item */
+#taskList li {
+  background: rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 0.6rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s;
+}
+
+#taskList li:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Checkbox & Text */
+#taskList li input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 0.75rem;
+  accent-color: var(--accent);
+}
+
+#taskList li span {
+  flex: 1;
+  word-break: break-word;
+  color: var(--text);
+  transition: color 0.2s;
+}
+
+#taskList li span.completed {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+/* Delete Button */
+#taskList li button {
+  background: var(--danger);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s, transform 0.15s;
+}
+
+#taskList li button:hover {
+  background: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.25rem;
+  }
+
+  #addBtn, #taskInput {
+    font-size: 0.95rem;
+  }
+
+  #taskList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  #taskList li button {
+    align-self: flex-end;
+  }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
