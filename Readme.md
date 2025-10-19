@@ -8,7 +8,7 @@ It lets users **add, edit, mark complete, and delete tasks**, with all data stor
 ## 🚀 Live Demo
 > *(Optional: Add a live link here if you deploy it on GitHub Pages or Netlify)*  
 Example:  
-👉 [Live Demo](https://yourusername.github.io/todo-list/)
+👉 [Live Demo]([https://yourusername.github.io/todo-list/](https://sarthaksk26.github.io/TodoFromBasics/))
 
 ---
 
@@ -21,16 +21,6 @@ Example:
 ✅ **Persistent Storage** — Uses `localStorage` so tasks stay even after reload.  
 ✅ **Responsive Design** — Works smoothly on desktop and mobile.  
 ✅ **Minimal & Modern UI** — Clean design made with pure CSS.
-
----
-
-## 🖥️ Preview
-
-| Desktop View | Mobile View |
-|---------------|--------------|
-| ![Desktop Preview](https://via.placeholder.com/500x300?text=Desktop+Preview) | ![Mobile Preview](https://via.placeholder.com/250x450?text=Mobile+Preview) |
-
-*(Replace placeholders with your actual screenshots if available.)*
 
 ---
 
