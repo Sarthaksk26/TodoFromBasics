@@ -95,5 +95,4 @@ If you have suggestions, feel free to fork the repo and submit a pull request.
 ## 🧑‍💻 Author
 
 **Sarthak Kumbhar**  
-📍 Government College of Engineering, Karad  
 🌐 [GitHub Profile](https://github.com/Sarthaksk26)
